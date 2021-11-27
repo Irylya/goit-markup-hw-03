@@ -17,6 +17,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  /* background-color: green; */
+  outline: 2px solid orangered;
+}
+
 .list {
   list-style: none;
 }
