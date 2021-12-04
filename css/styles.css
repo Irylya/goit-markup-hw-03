@@ -24,21 +24,16 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: center;
 }
-
-/* .container {
-  outline: 2px solid green;
-} */
-
-/* .link * {
-  outline: 2px solid blue;
-} */
 
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.text {
+  margin: 0;
 }
 
 .image {
@@ -99,33 +94,26 @@ body {
 .header {
   display: flex;
   flex-basis: 100%;
-  height: 80px;
+
   border-bottom: 1px solid #ececec;
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
   display: flex;
-  width: 50%;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+  margin-left: 93px;
 }
 
 .auth-nav {
   display: flex;
   margin-left: auto;
-  align-items: center;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-
-  flex-grow: 2;
-}
-.nav-tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-grow: 4;
 }
 
 .nav-tabs-item:not(:first-child),
@@ -169,7 +157,7 @@ body {
   display: block;
   width: 200px;
   height: 50px;
-  border-color: var(--acsent-color);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
@@ -204,11 +192,15 @@ body {
   color: var(--tittle-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.7;
+  line-height: 1.17;
   text-align: center;
 }
 
 /* Наші переваги */
+.section-feature {
+  padding-top: 94px;
+}
+
 .feature-list {
   display: flex;
   flex-wrap: wrap;
@@ -232,10 +224,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.text {
-  margin: 0;
 }
 
 /* Чим ми займаємось */
@@ -289,8 +277,10 @@ body {
 }
 
 .team-card-position {
-  font-size: 16px;
   margin: 0;
+
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* footer */
@@ -331,7 +321,7 @@ body {
 .filter-button {
   display: block;
   padding: 6px 22px;
-  border-color: var(--second-bg-color);
+  border: none;
   border-radius: 4px;
 
   color: var(--tittle-text-color);
@@ -355,6 +345,13 @@ body {
 }
 
 /* Наші проекти */
+.filter-container {
+  padding-bottom: 16px;
+}
+
+.project-container {
+  margin-top: 34px;
+}
 
 .project-list {
   display: flex;
@@ -367,12 +364,12 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-card-title {
@@ -390,5 +387,5 @@ body {
   margin: 0;
 
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
 }
